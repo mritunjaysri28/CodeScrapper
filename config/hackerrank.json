@@ -1,0 +1,21 @@
+{
+    "url": "https://www.hackerrank.com/mritunjaysri28?hr_r=1",
+    "flag": true,
+    "tutorial": [
+        {
+            "tutorialName":"30DaysOfCode",
+            "tutorialUrl":"https://www.hackerrank.com/domains/tutorials/30-days-of-code",
+            "subDirectory": true
+        },
+        {
+            "tutorialName":"10DaysOfJavascript",
+            "tutorialUrl":"https://www.hackerrank.com/domains/tutorials/10-days-of-javascript",
+            "subDirectory": true
+        },
+        {
+            "tutorialName":"10DaysOfStatistics",
+            "tutorialUrl":"https://www.hackerrank.com/domains/tutorials/10-days-of-statistics",
+            "subDirectory": true
+        }
+    ]
+}

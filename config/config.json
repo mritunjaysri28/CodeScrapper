@@ -1,0 +1,8 @@
+{
+    "browser": {
+        "browser": "edge",
+        "driver": "msedgedriver.exe"
+    },
+    "task_name": "hackerrank",
+    "task_config": "./config/hackerrank.json"
+}
