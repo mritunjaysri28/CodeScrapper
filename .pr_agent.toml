@@ -1,0 +1,8 @@
+[config]
+enable_custom_labels = true
+
+[custom_labels."Link Update"]
+description = "Whenever any link in the code is updated"
+
+[custom_labels."Code Update"]
+description = "Whenever any code is updated"
