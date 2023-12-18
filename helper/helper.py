@@ -69,7 +69,28 @@ def xpath_click(xpath):
     for element in elements:
         element.click()
 
+def dynamic_scrolling():
+    xpath_click(".//input[contains(@value, 'solved')]")
+    last_height = driver.execute_script("return document.body.scrollHeight")
 
+    while True:
+        element = driver.find_element(
+            By.XPATH, ".//footer[@class='community-footer']")
+
+        # Scroll down to bottom
+        driver.execute_script(
+            "window.scrollTo(0, document.body.scrollHeight);")
+
+        # Wait to load page
+        time.sleep(30)
+
+        # Calculate new scroll height and compare with last scroll height
+        new_height = driver.execute_script("return document.body.scrollHeight")
+
+        if new_height == last_height:
+            # If heights are the same it will exit the function
+            break
+        last_height = new_height
 
 def new_tab():
     global driver

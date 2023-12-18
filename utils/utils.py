@@ -1,5 +1,8 @@
 import json
 
 def read_json(file):
-    with open(file, "r") as f:
-        return json.load(f)
+	try:
+		with open(file=file,mode='r') as f:
+			return json.load(fp=f)
+	except FileNotFoundError:
+	    print(f"File {file} not found.")
